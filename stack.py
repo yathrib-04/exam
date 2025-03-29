@@ -1,8 +1,4 @@
-#QUESTION NUMBER 1
-def search_number_in_array():
-    numbers = list(map(int, input("Enter a sequence of numbers separated by spaces: ").split()))
-    search_number = int(input("Enter a number to be searched: "))
-    count = 0
+
     for num in numbers:
         if num == search_number:
             count += 1
