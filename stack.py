@@ -1,4 +1,14 @@
-
+#QUESTION NUMBER 1
+def search_number_in_array():
+    numbers = list(map(int, input("Enter a sequence of numbers separated by spaces: ").split()))
+    search_number = int(input("Enter a number to be searched: "))
+    count = 0
+    for num in numbers:
+        if num == search_number:
+            count += 1
+    if count > 0:
+        print(f"The number {search_number} is present in the array and appears {count} time(s).")
+    else:
         print(f"The number {search_number} is not present in the array.")
 search_number_in_array()      #I inserted these numbers : 11 12 3 12 4 8 10 and searched for number 12
 
